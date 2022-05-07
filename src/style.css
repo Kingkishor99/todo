@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(D:\coding\coding\react\to-do\src\so.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.calender,
+.todo {
+    width: 600px;
+    height: 500px;
+    margin-top: 10vh;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 15px;
+    padding: 15px;
+
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.377);
+}
+
+.todolist {
+
+    font-size: medium;
+    margin-top: 15px;
+    width: 400px;
+    text-overflow: ellipsis;
+    border-bottom: solid 2px grey;
+
+}
+
+.edit,
+.delete {
+    appearance: none;
+    background: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.edit {
+    margin: 0 5px;
+    background-color: #FDBC41;
+    border: 1px solid #DFA035;
+    transition: transform 0.3s;
+
+
+}
+
+.delete {
+    margin: 0 5px;
+    background-color: #FC5854;
+    border: 1px solid #DF4744;
+    transition: transform 0.3s;
+
+}
+
+.edit:hover,
+.delete:hover {
+
+    transform: scale(1.2);
+    transition: transform 0.2s;
+
+}
+
+.wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: baseline;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.add {
+    appearance: none;
+    background-color: #39C94D;
+    border: 2px solid #27AA35;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    margin: 10px auto;
+    color: #fff;
+
+}
+
+.add i {
+    margin: 0 3px;
+}
