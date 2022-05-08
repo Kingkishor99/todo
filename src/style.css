@@ -1,10 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(D:\coding\coding\react\to-do\src\so.jpg);
+    /* background-image: url(D:\coding\coding\react\to-do\src\so.jpg); */
+    background: linear-gradient(to right top, rgb(182, 65, 65), rgb(209, 223, 12), rgb(13, 196, 53));
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cookie', cursive;
 }
 
 .app {
@@ -16,13 +17,13 @@ body {
 .calender,
 .todo {
     width: 600px;
-    height: 500px;
+    height: auto;
     margin-top: 10vh;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 15px;
     padding: 15px;
-
     box-shadow: 0px 4px rgba(0, 0, 0, 0.377);
+    transition: height 0.2s;
 }
 
 .todolist {
@@ -88,6 +89,7 @@ body {
     height: 20px;
     border-radius: 5px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .add {
@@ -95,13 +97,43 @@ body {
     background-color: #39C94D;
     border: 2px solid #27AA35;
     border-radius: 5px;
-    width: 80px;
+    width: 90px;
     height: 30px;
-    margin: 10px auto;
+    margin: 10px 0 auto 57px;
     color: #fff;
+    font-family: 'Cookie', cursive;
+
 
 }
 
 .add i {
-    margin: 0 3px;
+    margin-right: 6px;
+}
+
+.input {
+    margin-left: 20px;
+    margin-top: 20px;
+    appearance: none;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 7px;
+    width: 400px;
+    background-color: transparent;
+    font-family: 'Cookie', cursive;
+    font-size: 15px;
+}
+
+.input:focus {
+
+    background-color: #fff;
+}
+
+.todo .to-do {
+
+    font-size: 23px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: 'Cookie', cursive;
+    color: #39C94D;
+
 }
