@@ -3,11 +3,12 @@ import React, { useEffect, useState } from 'react'
 function Todo() {
     const [a, setA] = useState([])
     const [text, setText] = useState("")
+    const [action, setAction] = useState(1)
 
 
     const pu = (e) => {
         e.preventDefault()
-        if (a.length < 15 && text) {
+        if (a.length < 12 && text) {
             setA([...a, {
                 p: text
             }])
@@ -26,12 +27,18 @@ function Todo() {
     }
 
 
-    const remove = (i) => {
-        console.log(i)
-        a.splice(i, 1)
+    const remove = (c) => {
+        console.log(c)
+        a.splice(c.i, 1)
         setA(a)
+        setAction(0)
+        alert(`Task deleted "${c.p}"`)
     }
+
     const date = new Date()
+    if (action == 0) {
+        return <Todo />
+    }
 
 
 
@@ -51,14 +58,14 @@ function Todo() {
                         <div className='button'>
                             <input type='checkbox' className='checkbox' />
                             <button onClick={() => edit(i)} className='edit'></button >
-                            <button onClick={() => remove(i)} className='delete'></button>
+                            <button onClick={() => remove(c)} className='delete'></button>
 
                         </div>
 
                     </div>)}
 
-                {(a.length < 15) ? (<div>
-                    <input id='input' onChange={e => setText(e.target.value)} placeholder="Enter task..." className="input" />
+                {(a.length < 12) ? (<div>
+                    <input id='input' onChange={e => setText(e.target.value)} placeholder="  Enter task..." className="input" />
                     <button className='add' onClick={e => pu(e)}><i className='calendar plus icon'></i>Add</button> </div>) : ("")}
 
 

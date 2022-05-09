@@ -1,29 +1,45 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-image: url(D:\coding\coding\react\to-do\src\so.jpg); */
-    background: linear-gradient(to right top, rgb(182, 65, 65), rgb(209, 223, 12), rgb(13, 196, 53));
+    background-image: url(so.jpg);
+    /* background: linear-gradient(to right top, rgb(182, 65, 65), rgb(209, 223, 12), rgb(13, 196, 53)); */
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Cookie', cursive;
+    height: 100vh;
 }
 
 .app {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.calender,
-.todo {
+.calender {
     width: 600px;
-    height: auto;
     margin-top: 10vh;
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: rgba(255, 255, 255, 0.315);
     border-radius: 15px;
     padding: 15px;
-    box-shadow: 0px 4px rgba(0, 0, 0, 0.377);
-    transition: height 0.2s;
+    height: 350px;
+}
+
+.todo {
+    width: 600px;
+    margin-top: 10vh;
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 15px;
+    padding: 15px;
+    height: 550px;
+}
+
+.chart {
+    width: 600px;
+    margin-top: 2vh;
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 15px;
+    padding: 15px;
+    height: 150px;
 }
 
 .todolist {
@@ -115,12 +131,15 @@ body {
     margin-top: 20px;
     appearance: none;
     height: 30px;
-    border: 2px solid grey;
+    border: 2px solid rgb(20, 20, 20);
     border-radius: 7px;
     width: 400px;
     background-color: transparent;
     font-family: 'Cookie', cursive;
     font-size: 15px;
+
+
+
 }
 
 .input:focus {
@@ -134,6 +153,6 @@ body {
     margin-left: 10px;
     font-weight: bold;
     font-family: 'Cookie', cursive;
-    color: #39C94D;
+    color: rgb(20, 20, 20);
 
 }
